@@ -13,50 +13,50 @@ class HomePage extends StatelessWidget {
       // appBar: AppBar(
       //   title: Text('data'),
       // ),
-      body: SafeArea(
-        child: Container(
-          width: fullWidth,
-          height: fullheight,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage('assets/home.jpg'),
-              fit: BoxFit.cover,
-            ),
+      body: Container(
+        width: fullWidth,
+        height: fullheight,
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('assets/ree.jpg'),
+            // image: AssetImage('assets/por.jpg'),
+            // image: AssetImage('assets/home.jpg'),
+            fit: BoxFit.cover,
           ),
-          child: Center(
-            child: Stack(
-              children: [
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    SizedBox(
-                      height: fullheight * 0.5,
-                    ),
-                    HomeButton(
-                      name: 'Love Calculator',
-                      routeName: 'calculator',
-                      icon: 'add',
-                    ),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    HomeButton(
-                      name: 'How to break',
-                      routeName: 'break',
-                      icon: 'add',
-                    ),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    HomeButton(
-                      name: 'Pationate Pictures',
-                      routeName: 'ppictures',
-                      icon: 'add',
-                    ),
-                  ],
-                )
-              ],
-            ),
+        ),
+        child: Center(
+          child: Stack(
+            children: [
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SizedBox(
+                    height: fullheight * 0.5,
+                  ),
+                  HomeButton(
+                    name: 'Love Calculator',
+                    routeName: 'calculator',
+                    icon: 'add',
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  HomeButton(
+                    name: 'How to break',
+                    routeName: 'break',
+                    icon: 'add',
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  HomeButton(
+                    name: 'Pationate Pictures',
+                    routeName: 'ppictures',
+                    icon: 'add',
+                  ),
+                ],
+              )
+            ],
           ),
         ),
       ),
